@@ -1,0 +1,16 @@
+<h3>{{name}}</h3>
+
+<div>
+	<input [value]="inputText">
+</div>
+
+<div>
+	<input [(ngModel)]="inputText2Way">
+  {{inputText2Way}}
+</div>
+
+<div>
+	<input (click)="click($event)">
+	<button [disabled]="button">Dodaj</button>
+  {{showClick}}
+</div>
